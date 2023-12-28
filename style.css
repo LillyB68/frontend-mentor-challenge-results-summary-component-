@@ -1,0 +1,291 @@
+body {
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: fit-content;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 10px 8px rgba(179, 169, 234, 0.15);
+}
+p, p > p {
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+.bluecard {
+    width: 260px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    
+}
+
+#bluecard-title {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: hsl(241, 100%, 89%);
+}
+
+.score-section {
+    width: 100px;
+    height: 100px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    
+}
+
+#score-received {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 800;
+    font-size: 45px;
+    color: white;
+}
+
+#max-total {
+    padding: 0px;
+    margin: 0px;
+    color: hsla(241, 100%, 89%, 0.5);
+}
+
+#affirmation-text {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+#text {
+    padding: 0px;
+    margin: 0px;
+    width: 230px;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+}
+
+.whitecard {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 30px;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+   
+    
+}
+#whitecard-title {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    font-size: 20px;
+}
+.reaction , .memory, .verbal, .visual {
+    margin: 0px;
+    padding: 0px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding-left: 9px;
+    
+}
+.visual {
+    background-color: rgb(243,243,253);
+}
+.verbal {
+    background-color: rgb(242,251,250);
+}
+.memory {
+    background-color: rgb(255,251,242);
+}
+.reaction {
+    background-color: rgb(253,249,248);
+}
+
+img {
+    margin: 0px;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+
+#reaction-text, #verbal-text, #visual-text {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 8px;
+
+}
+
+#visual-text {
+    color:rgb(110,122,198) ;
+}
+
+#verbal-text {
+    color: rgb(92,202,173);
+}
+
+#reaction-text {
+    color: rgb(244,148,150);
+}
+
+#reaction-score {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 70px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+#memory-text{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    color: rgb(249,200,90);
+}
+
+#memory-score{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 73px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+#verbal-score {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 90px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+#visual-score {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 93px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+button{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    width: 250px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 10px;
+    background-color:hsl(224, 30%, 27%);
+    color: white;
+    
+}
+
+button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    
+}
+span {
+    color:rgb(154, 152, 152);
+}
+
+@media only screen and (max-width:600px) {
+    .body {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .container {
+        flex-direction: column;
+        width:100%;
+        height: 100vh;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: none;
+    }
+    .bluecard {
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        width: 100%;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #bluecard-title{
+        margin-top: 5px;
+    }
+    #text {
+        width: 260px;
+    }
+
+    .whitecard {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .reaction , .memory, .verbal, .visual {
+       width: 90%;
+       margin-left: 15px;
+       margin-right: 20px;
+    }
+
+    #whitecard-title {
+        margin-left: 20px;
+    }
+
+    button {
+        width: 93%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #reaction-score, #memory-score, #verbal-score, #visual-score {
+        margin-left: auto;
+        padding-right: 8px;
+       
+    }
+   
+}
